@@ -1,0 +1,41 @@
+{
+  "presentationTable" : {
+    "name" : "D_TIMES",
+    "presentationColumns" : [ {
+      "name" : "CALENDAR_MONTH_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BMDemo.D_TIMES.CALENDAR_MONTH_DESC"
+    }, {
+      "name" : "CALENDAR_QUARTER_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BMDemo.D_TIMES.CALENDAR_QUARTER_DESC"
+    }, {
+      "name" : "CALENDAR_QUARTER_ID",
+      "sourceLogicalColumn" : "logicalColumn:BMDemo.D_TIMES.CALENDAR_QUARTER_ID"
+    }, {
+      "name" : "CALENDAR_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:BMDemo.D_TIMES.CALENDAR_YEAR"
+    }, {
+      "name" : "TIME_ID",
+      "sourceLogicalColumn" : "logicalColumn:BMDemo.D_TIMES.TIME_ID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:BMDemo.D_TIMES",
+      "levels" : [ {
+        "name" : "Time Total",
+        "sourceLogicalLevel" : "logicalLevel:BMDemo.D_TIMES.Time Total"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:BMDemo.D_TIMES.Quarter",
+        "displayColumn" : "presentationColumn:SADemo.D_TIMES.CALENDAR_QUARTER_DESC"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:BMDemo.D_TIMES.Month",
+        "displayColumn" : "presentationColumn:SADemo.D_TIMES.CALENDAR_MONTH_DESC"
+      }, {
+        "name" : "Time Detail",
+        "sourceLogicalLevel" : "logicalLevel:BMDemo.D_TIMES.Time Detail",
+        "displayColumn" : "presentationColumn:SADemo.D_TIMES.TIME_ID"
+      } ]
+    } ]
+  }
+}
