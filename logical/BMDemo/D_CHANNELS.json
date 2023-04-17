@@ -1,6 +1,7 @@
 {
   "logicalTable" : {
     "name" : "D_CHANNELS",
+    "description" : "test changes",
     "type" : "DIMENSION",
     "primaryKey" : [ "CHANNEL_ID" ],
     "logicalColumns" : [ {
